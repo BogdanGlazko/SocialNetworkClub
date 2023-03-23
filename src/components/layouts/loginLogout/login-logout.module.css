@@ -1,0 +1,65 @@
+.mainWrapper {
+  margin-left: 205px;
+}
+
+.loginWrapper {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.loginHeader {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+}
+
+form {
+  min-width: 340px;
+  padding: 60px;
+}
+
+.checkBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: inherit;
+}
+
+.checkBoxWrapper > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: 130px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.loader {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=login-logout.module.css.map */

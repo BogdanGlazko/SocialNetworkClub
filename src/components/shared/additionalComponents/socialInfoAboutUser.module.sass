@@ -1,0 +1,77 @@
+.commonInfoWrapper
+  margin-top: 90px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.commonInfo
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.changeLink
+  cursor: pointer
+  color: #6982e0
+
+
+.changeLink:hover
+  text-decoration: underline
+
+.stringWrapper
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  width: 100%
+  margin-bottom: 15px
+
+.inputWrapper
+  margin-left: 25px
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.inputWrapper
+  animation: .5s show ease
+
+.inputPosition
+  margin: 0 35px 0 5px
+
+
+@keyframes show
+  from
+   opacity: 0
+  to
+   opacity: 1
+
+
+.inputWrapper span
+  padding-top: 15px
+  padding-bottom: 15px
+
+.mainInputWrapper
+  display: flex
+  flex-direction: row
+  align-items: baseline
+
+
+
+.contentAndLinks
+  color: #6b6a6a
+  margin: 0 10px 0 20px
+  font-weight: bold
+  word-wrap: break-word
+  text-align: left
+
+.nameOfResource
+ width: 100px
+ text-align: left
+
+@media only screen and (max-width: 640px)
+ .contentAndLinks
+   margin-left: -20px
+ .commonInfoWrapper
+   align-items: flex-start
+ .stringWrapper
+   flex-direction: column
+   margin-left: 10px
+ .mainInputWrapper

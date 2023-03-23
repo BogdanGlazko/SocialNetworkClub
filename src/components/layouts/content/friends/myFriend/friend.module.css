@@ -1,0 +1,121 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friendWrapper {
+  width: 100%;
+  margin-left: -50px;
+  border-top: 1px solid rgba(80, 80, 80, 0.1);
+}
+
+.friendsWrapperBorder {
+  border-left: 1px solid rgba(80, 80, 80, 0.1);
+  border-right: 1px solid rgba(80, 80, 80, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-left: 80px;
+  width: calc(100% - 300px);
+}
+
+.friend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 35px;
+  color: black;
+}
+
+.leftSticky {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.friendWrapper img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.buttonWrapper, .button {
+  width: 80px;
+}
+
+.nameStatusWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.status {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.searchButton {
+  margin-left: 15px;
+}
+
+.formSearch {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.loader {
+  width: 38vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .friendsWrapperBorder {
+    width: calc(100% - 80px);
+  }
+  .checkboxWrapper {
+    margin-left: -160px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .friendsWrapperBorder {
+    width: 100%;
+  }
+  .checkboxWrapper {
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .formSearch {
+    width: 60%;
+  }
+  .checkboxWrapper {
+    margin-left: -10px;
+  }
+}
+
+/*# sourceMappingURL=friend.module.css.map */

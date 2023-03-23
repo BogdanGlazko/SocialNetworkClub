@@ -1,0 +1,286 @@
+.wrapper
+  font-family: 'Inter', sans-serif
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  box-sizing: border-box
+  justify-content: space-between
+
+.messagesPage
+  display: flex
+  flex-direction: row
+  margin: 10px 3% 3% 3%
+  min-width: 600px
+  //max-height: 85vh
+  //min-height: 75vh
+  height: calc(100vh - 158px)
+  border-radius: 5px
+  background-color: white
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+
+h2
+  font-size: 10px
+  text-align: left
+  padding-left: 5%
+
+
+.listOfUsers
+  overflow: scroll
+  overflow-x: hidden
+  flex-basis: 465px
+  border-right: solid rgba(128, 128, 128, 0.24) 1pt
+
+
+.messages
+  padding-bottom: 10px
+  font-size: 14px
+  flex-direction: column
+  flex-basis: 70%
+  display: flex
+  min-width: 80%
+  width: 100%
+  height: 100%
+  align-content: space-around
+  align-items: stretch
+  //border-bottom: solid rgba(128, 128, 128, 0.24) 1pt
+
+
+.messages
+  div
+  height: 100%
+  overflow: scroll
+  overflow-x: hidden
+
+
+.messages div :nth-child(1)
+  display: none
+
+
+/*SCROLL*/
+.messages::-webkit-scrollbar-track, .listOfUsers::-webkit-scrollbar-track, textarea::-webkit-scrollbar-track
+  border-radius: 10px
+  background: rgba(0, 0, 0, 0.1)
+
+
+.messages::-webkit-scrollbar-thumb, .listOfUsers::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background: rgba(0, 0, 0, 0.2)
+
+
+.messages::-webkit-scrollbar, .listOfUsers::-webkit-scrollbar, textarea::-webkit-scrollbar
+  width: 6px
+  height: 6px
+
+
+.messages::-webkit-scrollbar-thumb:hover, .listOfUsers::-webkit-scrollbar-thumb:hover, textarea::-webkit-scrollbar-thumb:hover
+  background: rgba(0, 0, 0, 0.4)
+
+
+.messages::-webkit-scrollbar-thumb:active, .listOfUsers::-webkit-scrollbar-thumb:active, textarea::-webkit-scrollbar-thumb:active
+  background: rgba(0, 0, 0, .9)
+/*------------------*/
+
+.listOfUsers div
+  display: flex
+  flex-direction: row
+
+
+.listOfUsers img, .currentUserMessages img
+  height: 50px
+  width: 50px
+  margin-right: 10%
+
+
+.usersInMessages, .currentUserMessages
+  margin-bottom: 10%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  cursor: pointer
+
+
+.currentUserMessages
+  margin-bottom: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  padding: 1% 1% 1% 1%
+  border-bottom: solid rgba(128, 128, 128, 0.24) 1pt
+
+
+.usersInMessages img, .currentUserMessages img
+  border-radius: 50%
+
+
+.usersInMessages
+  margin-left: 10%
+
+
+.one
+  float: right
+  clear: both
+  margin-right: 20px
+  margin-top: 15px
+  max-width: 70%
+  background-color: rgb(37, 99, 234)
+  border-radius: 5px
+  width: fit-content
+  color: white
+  text-align: left
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem
+
+.two
+  max-width: 70%
+  float: left
+  clear: both
+  margin-left: 20px
+  margin-top: 15px
+  text-align: left
+  background-color: rgba(234, 234, 234, 0.71)
+  border-radius: 5px
+  color: #000000
+  padding: 1.5%
+  width: fit-content
+
+.three
+  align-items: center
+  color: rgba(79, 76, 76, 0.5)
+  clear: both
+  margin-top: 15px
+
+input
+  height: 63px
+  line-height: 48px
+  padding: 10%
+  outline: none
+  font-size: 15px
+  color: #808080
+  max-width: 100%
+  width: 100%
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  display: block
+  font-weight: 400
+  opacity: 1
+  border-radius: 4px
+  border: none
+  -webkit-box-shadow: 0 1px 4px 0px rgb(0 0 0 / 12%)
+  box-shadow: 0 1px 4px 0px rgb(0 0 0 / 12%)
+
+
+.searchInput
+  font-family: 'Inter', sans-serif
+  margin-bottom: 40px
+
+
+.inputMessages
+  font-family: 'Inter', sans-serif
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-radius: 5px
+  background-color: rgba(241, 241, 241, 0.72)
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px
+
+
+.inputMessages button
+  font-family: 'Inter', sans-serif
+  background-color: #1d6cae
+  border-radius: 10px
+  width: 100px
+  height: 45px
+  border: none
+  color: white
+  font-weight: bold
+  margin: 0 10px 0 10px
+
+
+
+
+.textAreaClass
+  font-family: 'Inter', sans-serif
+  width: 87%
+  height: 80px
+  padding: 12px 20px
+  border: none
+  border-radius: 4px
+  background-color: rgba(241, 241, 241, 0.72)
+  font-size: 16px
+  resize: none
+
+textarea:focus, input:focus
+  outline: 0
+
+h2
+  font-weight: 400
+  font-size: 35px
+  color: black
+
+.currentUserWrapper, .currentUserWrapperDeleteMessage
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  font-weight: 900
+
+.currentUserWrapper div
+  white-space: nowrap
+
+.userStatusWrapper :nth-child(1)
+  font-size: 17px
+  color: black
+
+
+.currentUserWrapperDeleteMessage
+  color: red
+  font-weight: 600
+
+
+.isOnlineUser
+  color: rgba(16, 185, 129)
+  font-weight: 900
+
+
+.userStatusWrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.svgDeleteMediaSmall
+  display: none
+
+.deleteConversationText
+  display: flex
+  align-content: center
+
+@media only screen and (max-width: 1100px)
+  .deleteConversationText
+   display: none
+  .svgDeleteMediaSmall
+    display: block
+
+@media only screen and (max-width: 780px)
+ .listOfUsers
+    display: flex
+    flex-direction: row
+    //flex-basis: 68px
+    overflow-x: scroll
+    overflow-y: hidden
+    min-height: 70px
+    flex-basis: auto
+ .usersInMessages
+   margin: 1% 1% 0% 5%
+ .searchInput
+   display: none
+ .messagesPage
+    flex-direction: column
+    min-width: 20%
+    height: calc(100vh - 200px)
+ .wrapper
+    width: auto
+
+
+

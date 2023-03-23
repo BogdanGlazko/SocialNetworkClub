@@ -1,0 +1,363 @@
+.userMainInfoContainer > div > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: solid 4px #ffffff;
+  background-color: white;
+  object-fit: cover;
+}
+
+.circleAvatar {
+  border-radius: 50%;
+  border: solid 6px;
+  background: linear-gradient(90deg, rgb(100, 92, 227) 0%, rgba(103, 103, 199, 0.45) 100%);
+  width: 240px;
+  height: 240px;
+}
+
+.imagesWrapper {
+  width: 95%;
+}
+
+.userMainInfo {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 90px 70px 0 70px;
+}
+
+.aboutUser {
+  margin-bottom: 25px;
+  width: 85%;
+  text-align: justify;
+}
+
+.buttons {
+  margin-bottom: 25px;
+}
+
+/*.buttonAdd */
+/*    margin-right: 25px*/
+/**/
+.imagesRecent img {
+  transition: 0.3s;
+  margin-right: 12px;
+  border-radius: 20px;
+  height: 16rem;
+  width: 9rem;
+  object-fit: cover;
+}
+
+.imagesRecent {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recent > div, .explore > div {
+  font-size: 35px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.explore {
+  width: 60vw;
+  margin-top: 85px;
+}
+
+.userMainInfoContainer {
+  display: flex;
+  flex-direction: row;
+  width: -webkit-fill-available;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  width: 50%;
+}
+
+.imagesExplore {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.imagesExplore img {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  height: 16rem;
+  width: 12rem;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.likesComments {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 12rem;
+  height: 16rem;
+  margin-top: -16.7rem;
+  margin-bottom: 3rem;
+  padding: 6rem;
+  transition: 0.5s ease;
+  /* position: absolute */
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.imagesExploreElement:hover .likesComments {
+  opacity: 0.99;
+  background-color: rgba(0, 0, 0, 0.31);
+}
+
+/*.imagesExploreElement:hover .likesComments */
+/*    opacity: 1*/
+/**/
+.nameOfUser {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.boldHeader {
+  color: rgba(0, 0, 0, 0.91);
+}
+
+.infoAboutFollowers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.infoAboutFollowers span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.addPhotoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgba(128, 128, 128, 0.25) dashed 4px;
+  margin-right: 12px;
+  border-radius: 20px;
+  height: 16rem;
+  width: 9rem;
+  object-fit: cover;
+  font-size: 15px;
+  color: rgba(128, 128, 128, 0.75);
+}
+
+.addPhotoBlock div:hover {
+  cursor: pointer;
+  color: #1d6daf;
+}
+
+.addPhotoBlock div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.like svg, .comment svg {
+  color: #030000;
+}
+
+.like svg:hover {
+  color: #e71356;
+}
+
+.comment svg:hover {
+  color: #d5d5d5;
+}
+
+.like, .comment {
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*.imagesExplore div */
+/*    height: 16rem*/
+/*    width: 9rem*/
+/**/
+.loadMoreButton {
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.loadMoreButton:hover {
+  background-color: rgba(166, 165, 165, 0.53);
+  box-shadow: 0px 15px 20px rgba(68, 68, 68, 0.22);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.exploreLine {
+  width: 60%;
+  border-bottom: rgba(80, 80, 80, 0.1) solid 1px;
+  margin-bottom: -0.5%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.exploreWrapperButtons, .buttonsChangeLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonsChangeLayout svg {
+  width: 19px;
+  height: 19px;
+  color: rgba(63, 63, 63, 0.86);
+  position: relative;
+}
+
+.buttonsChangeLayout div:nth-child(1) {
+  border-right: solid rgba(80, 80, 80, 0.1) 1px;
+}
+
+.buttonsChangeLayout {
+  border: solid rgba(80, 80, 80, 0.1) 1px;
+  border-radius: 5px;
+}
+
+.buttonsChangeLayout div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 80px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.73);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.buttonsChangeLayout div:nth-child(1):hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.buttonsChangeLayout div:nth-child(2):hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top {
+  top: 90%;
+  position: fixed;
+  right: 90px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .userMainInfoContainer {
+    align-items: flex-start;
+  }
+  .circleAvatar {
+    display: none;
+  }
+  .userInfo {
+    margin: 0;
+    width: 70%;
+  }
+  .userMainInfo {
+    padding-top: 20px;
+  }
+  .imagesExplore {
+    justify-content: space-between;
+  }
+  .imagesRecent img {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .userMainInfo {
+    padding: 37px 0px 0px 10px;
+  }
+  .imagesExplore img {
+    height: 22rem;
+    width: 20rem;
+  }
+  .likesComments {
+    height: 22rem;
+    width: 20rem;
+    margin-top: -365px;
+  }
+  .userInfo {
+    width: 95%;
+  }
+  .explore {
+    width: 78vw;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .userMainInfo {
+    padding: 30px 0px 0px 10px;
+    width: 90vw;
+  }
+  .imagesExplore img {
+    height: 16rem;
+    width: 13rem;
+  }
+  .likesComments {
+    height: 16rem;
+    width: 13rem;
+    margin-top: -268px;
+  }
+  .buttonsChangeLayout {
+    display: none;
+  }
+  .buttons button {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .recent > div {
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=myProfile.module.css.map */

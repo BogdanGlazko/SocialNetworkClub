@@ -1,0 +1,82 @@
+.header {
+  width: 100vw;
+  height: 70px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: h;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.19);
+  z-index: 10;
+  padding-top: 5px;
+  padding-right: 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.header svg, .header img {
+  width: 28px;
+  height: 28px;
+  color: rgba(0, 0, 0, 0.57);
+  margin-left: 25px;
+}
+
+.elementHover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header svg:hover, .header img:hover {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 35px 35px -4px;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 135px;
+  height: 40px;
+}
+
+.appearancePosition {
+  margin-left: 120px;
+  margin-right: 5px;
+}
+
+.searchInputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40vw;
+}
+
+.searchSvg svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.34);
+}
+
+.headerLogo {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .appearancePosition {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */

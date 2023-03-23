@@ -1,0 +1,72 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-area: c;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  margin-top: 70px;
+  box-shadow: rgba(59, 59, 59, 0.32) 0 0 15px;
+  height: calc(100vh - 70px);
+  width: calc(100vw - 300px);
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.content::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.loader {
+  width: 38vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rightsReserved {
+  margin-top: 25px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    width: calc(100vw - 200px);
+  }
+}
+@media only screen and (max-width: 830px) {
+  .content {
+    width: calc(100vw - 45px);
+  }
+}
+
+/*# sourceMappingURL=content.module.css.map */

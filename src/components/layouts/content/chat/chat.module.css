@@ -1,0 +1,120 @@
+.messages::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+.messages::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.messages::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.messages::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 70vh;
+}
+
+.chatPage {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.inputMessages {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  margin-top: 25px;
+}
+.inputMessages button {
+  margin-left: -80px;
+}
+.inputMessages textarea {
+  width: 100%;
+  max-height: 65px;
+  padding: 20px 63px 0px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.messages {
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-bottom: solid rgba(128, 128, 128, 0.24) 1pt;
+  border-top: solid rgba(128, 128, 128, 0.24) 1pt;
+  width: 65%;
+}
+
+.userMessage {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.userMessage img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.nameUser {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: -5px;
+}
+
+.messageUser {
+  max-width: 100%;
+  word-wrap: break-word;
+  padding-left: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.messageStyleName {
+  margin-left: 2vw;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px;
+  padding: 7px;
+  background-color: #dddfe2;
+}
+
+@media only screen and (max-width: 460px) {
+  .inputMessages textarea {
+    font-size: 12px;
+    padding: 20px 63px 0px 8px;
+  }
+}
+
+/*# sourceMappingURL=chat.module.css.map */
